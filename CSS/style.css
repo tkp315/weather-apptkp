@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display:  flex;
+    justify-content:  center;
+    min-height: 100vh;
+    align-items: center;
+    background-color: aqua;
+}
+.container
+{
+    /* display: none; */
+    width: 300px;
+    background-color: #ffffff;
+    display: grid;
+   grid-template-rows:auto auto auto auto auto ;
+    text-align: center;
+   gap: 10px;
+    height: 50vh;
+    /* margin: 30px; */
+    border-radius: 5px ;
+}
+.heading
+{
+
+text-align: left;
+font-size: larger;
+font-weight: bold;
+color: #43AFFC;
+margin-left: 5px;
+margin-top: 5px;
+}
+.name
+{
+    margin-left: 10px;
+}
+.getResult
+{
+    /* display: none; */
+    display: flex;
+    justify-content: center;
+
+}
+.result
+{
+    display: none;
+    height: 40px;
+    padding: 10px;
+width: 80%;
+border: 1px solid #aaa;
+border-radius: 5px;
+}
+.resultError
+{
+    display: block;
+    color: #721c24;
+    background-color:#f8d7da ;
+}
+.resultPending
+{
+    display: block;
+    color: #0c5460;
+    background-color:#d1ecf1 ;
+}
+input[type=text],.btn
+{
+padding: 10px;
+width: 80%;
+border: 1px solid #aaa;
+border-radius: 5px;
+}
+.op
+{
+    color: #6a6666
+}
+input[type=text]::placeholder
+{
+    text-align: center;
+    color: #43affc;
+}
+.btn
+{
+    background-color: #43AFFC;
+}
+
+.container2
+{
+    
+    display: none;
+    width: 400px;
+    background-color: #ffffff;
+    text-align: center;
+    min-height: 50vh;
+    padding: 20px;
+}
+.output_part
+{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto ;
+    gap: 20px;
+    margin-left: 10px;
+}
+.wrapper
+{
+    text-align: left;
+    padding-top: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #43AFFC;
+}
+header
+{
+    font-size: large;
+    color: #43AFFC;
+    font-weight: bolder;
+}
+
+.output_part .clear img
+{
+   width: 100px;
+}
+.temp
+{
+    font-size: 50px;
+}
+.description
+{
+font-size: large;
+}
+.location
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.location .icon img
+{
+width: 20px;
+}
+.footer
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 2px solid black;
+    width: 100%;
+    height: 60px;
+}
+.feelsLike
+{
+    
+    grid-area: span(1,2);
+    border-right: 2px solid red;
+    text-align: center;
+}
+img
+{
+width: 20px;
+
+}
